@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Simple Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domino's Dynamic Poster</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="calculator">
-    <input type="text" id="display" disabled>
+<div class="poster">
 
-    <div class="buttons">
-        <button onclick="clearDisplay()">AC</button>
-        <button onclick="deleteLast()">DEL</button>
-        <button onclick="appendValue('%')">%</button>
-        <button onclick="appendValue('/')">/</button>
+  <div class="bg-circle c1"></div>
+  <div class="bg-circle c2"></div>
 
-        <button onclick="appendValue('7')">7</button>
-        <button onclick="appendValue('8')">8</button>
-        <button onclick="appendValue('9')">9</button>
-        <button onclick="appendValue('*')">*</button>
+  <nav>
+    <div class="logo">DOMINO'S</div>
+    <button class="order-btn">ORDER NOW</button>
+  </nav>
 
-        <button onclick="appendValue('4')">4</button>
-        <button onclick="appendValue('5')">5</button>
-        <button onclick="appendValue('6')">6</button>
-        <button onclick="appendValue('-')">-</button>
+  <div class="content">
 
-        <button onclick="appendValue('1')">1</button>
-        <button onclick="appendValue('2')">2</button>
-        <button onclick="appendValue('3')">3</button>
-        <button onclick="appendValue('+')">+</button>
+    <div class="left">
 
-        <button onclick="appendValue('0')">0</button>
-        <button onclick="appendValue('.')">.</button>
-        <button onclick="toggleSign()">+/-</button>
-        <button class="equal" onclick="calculate()">=</button>
+      <h1>
+        HOT &<br>
+        CHEESY<br>
+        PIZZA
+      </h1>
+
+      <p class="offer">
+        FLAT 50% OFF
+      </p>
+
+      <p class="desc">
+        Delicious pizza loaded with cheese,
+        fresh veggies & crispy crust.
+      </p>
+
+      <button id="menuBtn">
+        VIEW MENU
+      </button>
+
     </div>
+
+    <div class="right">
+
+      <div class="pizza-box">
+        <img
+          src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop"
+          alt="Pizza"
+          class="pizza"
+        >
+      </div>
+
+    </div>
+
+  </div>
+
 </div>
 
 <script src="script.js"></script>
